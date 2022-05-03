@@ -18,7 +18,10 @@ public class ConductorImpl implements ConductorDao {
 	@Transactional
 	@Override
 	public void insert(Conductor p) {
+<<<<<<< HEAD
+=======
 		// TODO Auto-generated method stub
+>>>>>>> f8c744d8135b823deb81c1b57636437d684399ff
 		try {
 			op.persist(p);
 		} catch (Exception e) {
@@ -35,6 +38,12 @@ public class ConductorImpl implements ConductorDao {
 			Query jpql = op.createQuery("from Conductor p");
 			listaConductor = (List<Conductor>) jpql.getResultList();
 		} catch (Exception e) {
+<<<<<<< HEAD
+			System.out.println("Error al listar en el DAO de persona");
+		}
+		return listaConductor;
+	}	
+=======
 			// TODO: handle exception
 			System.out.println("Error al listar en el DAO de persona");
 		}
@@ -56,4 +65,5 @@ public class ConductorImpl implements ConductorDao {
 	}
 	
 	
+>>>>>>> f8c744d8135b823deb81c1b57636437d684399ff
 }

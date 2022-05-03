@@ -48,6 +48,8 @@ public class ConductorController {
 		}
 	}
 	
+<<<<<<< HEAD
+=======
 	public void delete(Conductor con) {
 		try {
 			pService.delete(con.getId());
@@ -57,6 +59,7 @@ public class ConductorController {
 		}
 	}
 
+>>>>>>> f8c744d8135b823deb81c1b57636437d684399ff
 	public Conductor getP() {
 		return p;
 	}
