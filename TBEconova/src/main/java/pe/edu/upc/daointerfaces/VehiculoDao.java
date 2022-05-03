@@ -9,3 +9,4 @@ public interface VehiculoDao {
 	public List<Vehiculo> list();
 	public void delete(int id);
 }
+
